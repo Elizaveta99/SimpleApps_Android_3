@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="tab_text_1">Calculator</string>
+    <string name="tab_text_2">Animation</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="from_number">From value</string>
+    <string name="to_number"> </string>
+    <string name="button_calc">Calculate</string>
+    <string name="error">Error</string>
+    <string name="wrong_input">Wrong input</string>
+    <string name="hit_image">Animation image</string>
+    <string-array name="listOfItemsFrom">
+        <item>square kilometer</item>
+        <item>square meter</item>
+    </string-array>
+    <string-array name="listOfItemsTo">
+        <item>square foot</item>
+        <item>acre</item>
+    </string-array>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_login_main">First Activity</string>
+    <string name="button">Go to Calculator</string>
+</resources>
