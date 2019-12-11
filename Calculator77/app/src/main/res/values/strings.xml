@@ -29,4 +29,6 @@
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_login_main">First Activity</string>
     <string name="button">Go to Calculator</string>
+    <string name="radiobutton1">First animation</string>
+    <string name="radiobutton2">Second animation</string>
 </resources>

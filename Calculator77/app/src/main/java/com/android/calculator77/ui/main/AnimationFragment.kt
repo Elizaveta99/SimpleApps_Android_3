@@ -1,14 +1,19 @@
 package com.android.calculator77.ui.main
 
+import android.media.Image
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
+import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.android.calculator77.R
+import kotlinx.android.synthetic.main.animation_main.*
+import kotlinx.android.synthetic.main.fragment_main.*
 
 /**
  * A placeholder fragment containing a simple view.
@@ -29,11 +34,28 @@ class AnimationFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val root = inflater.inflate(R.layout.animation_main, container, false)
-//        val textView: TextView = root.findViewById(R.id.section_label)
-//        pageViewModel.text.observe(this, Observer<String> {
-//            textView.text = it
-//        })
-        return root
+
+        val radio1: RadioButton = root.findViewById(R.id.radioButton1)
+        val radio2: RadioButton = root.findViewById(R.id.radioButton3)
+        val image: ImageView = root.findViewById(R.id.hit_image)
+
+        radio1.setOnClickListener {
+            val animation: Animation =
+                AnimationUtils.loadAnimation(activity?.getApplicationContext(), R.anim.first_animation)
+            image.startAnimation(animation)
+            radio1.isChecked = false
+        }
+
+
+        radio2.setOnClickListener {
+            val animation: Animation =
+                AnimationUtils.loadAnimation(activity?.getApplicationContext(), R.anim.second_animation)
+            image.startAnimation(animation)
+            radio2.isChecked = false
+        }
+
+
+            return root
     }
 
     companion object {
